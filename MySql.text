@@ -1,0 +1,43 @@
+// If "Error: ER_NOT_SUPPORTED_AUTH_MODE:" occors in your terminal,
+// past following into your MySql Workbench.
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
+
+
+// Create a table with flowers.
+
+CREATE TABLE flowers(
+	id INT AUTO_INCREMENT,
+    genus VARCHAR(100),
+    title VARCHAR(100),
+    color VARCHAR(100),
+    price INT,
+    PRIMARY KEY(id)
+    );
+
+
+// Fill table flowers with values.
+
+INSERT INTO flowers (genus, title, color, price) 
+	values 
+		('dahlior', 'Gul dahlia', 'gul', '10'),
+ 		('dahlior', 'Lila dahlia', 'lila', '20'),
+		('dahlior', 'Orange dahlia', 'orange', '30'),
+		('dahlior', 'Röd dahlia', 'röd', '40'),
+		('dahlior', 'Rosa dahlia', 'rosa', '50'),
+		('dahlior', 'Vit dahlia', 'vit', '60'),
+		('prästkragar', 'Lila Prästkrage', 'lila', '10'),
+		('prästkragar', 'Röd Prästkrage', 'röd', '20'),
+		('prästkragar', 'Rosa Prästkrage', 'rosa', '30'),
+		('prästkragar', 'Vit Prästkrage', 'vit', '40'),
+		('rosor', 'Gul ros', 'gul', '10'),
+    ('rosor', 'Lila ros', 'lila', '20'),
+    ('rosor', 'Orange ros', 'orange', '30'),
+    ('rosor', 'Röd ros', 'röd', '40'),
+    ('rosor', 'Rosa ros', 'rosa', '50'),
+    ('rosor', 'Vit ros', 'vit', '60'),
+    ('tulpaner', 'Gul tulpan', 'gul', '10'),
+    ('tulpaner', 'Orange tulpan', 'orange', '20'),
+    ('tulpaner', 'Röd tulpan', 'röd', '30'),
+    ('tulpaner', 'Rosa tulpan', 'rosa', '40'),
+    ('tulpaner', 'Vit tulpan', 'vit', '50');

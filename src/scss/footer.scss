@@ -1,0 +1,15 @@
+footer {
+  background-color: rgb(0, 0, 0) !important;
+
+  .facebook-icon, .twitter-icon, .instagram-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);  
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+  }
+  .footer-copyright{
+    border-top: solid 1px white;
+  }
+}
+  
